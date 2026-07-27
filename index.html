@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gx Dikzz Store — Bot WhatsApp</title>
+  <meta name="description" content="Jual Bot WhatsApp terbaik. Bot AI, Broadcast, Auto Reply. Harga terjangkau, support aktif.">
+  <link rel="icon" href="media/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== SIDEBAR OVERLAY ===== -->
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="media/logo.png" alt="Logo" class="sidebar-logo" onerror="this.style.display='none'">
+      <span class="sidebar-title">Gx Dikzz Store</span>
+      <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+    </div>
+
+    <div class="sidebar-nav">
+      <a class="sidebar-item" href="#" onclick="closeSidebar()">
+        <span class="sidebar-icon">🏠</span> Beranda
+      </a>
+      <a class="sidebar-item" href="#produk" onclick="closeSidebar()">
+        <span class="sidebar-icon">📦</span> Produk
+      </a>
+      <a class="sidebar-item sidebar-item--cart" href="#" onclick="closeSidebar(); openCartModal()">
+        <span class="sidebar-icon">🛒</span> Keranjang
+      </a>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-section-label">Hubungi Kami</div>
+    <div class="sidebar-contacts">
+      <a class="sidebar-contact" href="https://wa.me/6285768090238" target="_blank">
+        <span class="sidebar-contact-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:22px;height:22px;">
+        </span>
+        <div>
+          <div class="sidebar-contact-label">WhatsApp</div>
+          <div class="sidebar-contact-value">Gx Dikzz Developer</div>
+        </div>
+      </a>
+      <a class="sidebar-contact" href="https://instagram.com/rezonexd_md" target="_blank">
+        <span class="sidebar-contact-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:22px;height:22px;border-radius:6px;">
+        </span>
+        <div>
+          <div class="sidebar-contact-label">Instagram</div>
+          <div class="sidebar-contact-value">@gxdikzz</div>
+        </div>
+      </a>
+      <a class="sidebar-contact" href="https://t.me/hostkamandaka" target="_blank">
+        <span class="sidebar-contact-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style="width:22px;height:22px;">
+        </span>
+        <div>
+          <div class="sidebar-contact-label">Telegram</div>
+          <div class="sidebar-contact-value">Gx Dikzz</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="sidebar-footer">© 2026 Gx Dikzz Store</div>
+  </aside>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="nav-left">
+      <button class="btn-hamburger" onclick="sfx('click'); openSidebar()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="nav-logo" href="#">
+        <img src="media/logo.png" alt="Logo" onerror="this.style.display='none'">
+        <span class="logo-text">Gx Dikzz Store</span>
+      </a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-cart" onclick="sfx('click'); openCartModal()">
+        🛒 Keranjang
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">⚡ Bot WhatsApp Premium</div>
+      <h1>Gx Dikzz<br><span>Store</span></h1>
+      <p>Solusi otomatisasi WhatsApp terbaik untuk bisnis kamu. Bot AI, Broadcast, dan Auto Reply siap pakai.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">100+</span>
+          <span class="stat-label">Pelanggan</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Produk Kami</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ===== PRODUCTS ===== -->
+  <main class="section" id="produk">
+    <div class="section-title">Produk <span>Kami</span></div>
+    <div class="section-sub">Klik produk untuk lihat detail &amp; order langsung via WhatsApp</div>
+    <div id="product-grid">
+      <div class="loading-products">⏳ Memuat produk...</div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 <span>Gx Dikzz Store</span> — All Rights Reserved</p>
+    <p style="margin-top:6px; font-size:0.75rem">Bot WhatsApp Premium · Support Aktif</p>
+  </footer>
+
+  <!-- ===== PRODUCT MODAL ===== -->
+  <div class="modal-overlay" id="overlay-product">
+    <div class="modal" id="modal-product"></div>
+  </div>
+
+  <!-- ===== CART MODAL ===== -->
+  <div class="modal-overlay" id="overlay-cart">
+    <div class="modal" id="modal-cart">
+      <div class="modal-body">
+        <button class="modal-close" onclick="sfx('click'); closeModal('overlay-cart')">✕</button>
+        <div style="font-family:'Rajdhani',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:16px">
+          🛒 Keranjang Saya
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== POPUP STOK KOSONG ===== -->
+  <div class="modal-overlay" id="overlay-stok-kosong">
+    <div class="modal popup-kosong" id="modal-stok-kosong">
+      <div class="popup-kosong-body">
+        <div class="popup-kosong-icon">📦</div>
+        <div class="popup-kosong-title">Stok Habis</div>
+        <div class="popup-kosong-desc">Maaf, produk ini sedang <strong>kosong</strong> dan belum tersedia saat ini.<br>Hubungi kami untuk info restock.</div>
+        <div class="popup-kosong-actions">
+          <button class="btn-secondary" onclick="sfx('click'); closeModal('overlay-stok-kosong')">Tutup</button>
+          <a class="btn-primary" href="https://wa.me/6285768090238" target="_blank" onclick="sfx('order')">💬 Tanya Admin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== BACKSOUND ===== -->
+  <audio id="backsound" loop>
+    <!-- Akan diload otomatis oleh JS dari media/ -->
+  </audio>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
