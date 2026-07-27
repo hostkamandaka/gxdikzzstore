@@ -1,0 +1,7 @@
+nama=Nokos
+harga=Rp 10.000 - Rp 50.000
+badge=Populer
+stok=Tersedia
+deskripsi=Layanan Nokos premium dengan berbagai pilihan negara. Pilih negara sesuai kebutuhan kamu dengan harga terjangkau.
+fitur=Bisa buat Daftar WhatsApp
+pilihan=Indonesia (Termurah): Rp 10.000|Malaysia: Rp 15.000|Singapura: Rp 25.000|Amerika Serikat: Rp 35.000|Eropa: Rp 50.000
