@@ -1,0 +1,7 @@
+nama=Bot Auto AI (Dikzz AI)
+harga=Rp 12.000 - Rp 15.000
+badge=Best Seller
+stok=Tersedia
+deskripsi= Dapat Free Update| Bot WhatsApp berbasis AI canggih yang bisa menjawab pertanyaan pelanggan secara otomatis 24/7. Dilengkapi teknologi Natural Language Processing untuk percakapan yang natural.
+fitur=Jawab otomatis 24/7|Integrasi GPT/AI|Multi bahasa|Laporan chat harian|Anti banned terbaru|Setup mudah 5 menit
+pilihan=SC Only: Rp 12.000|SC + Free Update: Rp 15.000
