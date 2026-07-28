@@ -1,0 +1,7 @@
+nama=Panel Pterodactyl
+harga=Rp 3.000 - Rp 15.000
+badge=Terjangkau
+stok=Kosong
+deskripsi=Panel Pterodactyl yang bisa anda gunakan untuk Run bot WhatsApp. Tersedia berbagai pilihan RAM sesuai kebutuhan kamu.
+fitur=Panel Pterodactyl yang bisa anda gunakan untuk Run bot WhatsApp
+pilihan=3 GB RAM: Rp 3.000|6 GB RAM: Rp 5.000|8 GB RAM: Rp 8.000|Unlimited RAM: Rp 15.000
